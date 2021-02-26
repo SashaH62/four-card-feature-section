@@ -1,0 +1,169 @@
+/* ## Colors
+### Primary
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+### Neutral
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+## Typography
+### Body Copy
+- Font size: 15px
+### Fonts
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600 */
+
+/* General */
+
+
+body,
+.container{
+  min-height: 100vh;
+}
+
+.container-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html{
+  height: auto;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  color: hsl(234, 12%, 34%);
+}
+
+h1{
+  font-size: 32px;
+}
+
+h3{
+  font-size: 19px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+}
+
+.card-container{
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-lg-4{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Headings */
+
+.main-heading {
+  font-weight: 200;
+}
+
+.heading-text {
+  width: 45%;
+  text-align: center;
+  font-weight: 200;
+}
+
+.sub-heading{
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+
+img {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  margin: 13px;
+  padding: 30px;
+  height: 240px;
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.card1 {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  border-top-width: 150%;
+}
+
+.card2 {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card3 {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card4 {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card-info {
+  font-size: 13px;
+  width: 90%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 375px) {
+  
+  body{
+    margin: 100px 13px;
+  }
+  
+  h1{
+    font-size: 26px;
+  }
+
+  .heading-text{
+    width: 100%;
+  }
+}
